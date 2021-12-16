@@ -1064,6 +1064,7 @@ footer .title_mob,
     .zodiak_section .zodiak {
         font-size: 12px;
         letter-spacing: 0.72px;
+        padding: 35px 0;
     }
 
     .zodiak_section .zodiak:nth-child(10) {
@@ -1362,7 +1363,7 @@ footer .title_mob,
     .section5 .contant {
         max-width: 425px;
         justify-content: space-between;
-        padding: 0 37px;
+        padding: 0 35px;
         flex-wrap: wrap;
         justify-content: space-between;
     }
