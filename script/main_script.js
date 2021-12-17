@@ -10,7 +10,7 @@
           let s = this.scrollY;
           let w = this.outerWidth;
           let h = document.getElementsByClassName('paralax')[0].clientWidth;
-          let h_b = 500;
+          let h_b = 300;
 
 
           let p_b = s / h_b;

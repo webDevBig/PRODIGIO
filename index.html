@@ -7,8 +7,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="font/stylesheet.css">
     <link rel="stylesheet" href="style/lightpick.css">
+
+
+    <link rel="stylesheet" href="../css/prism.css">
+
+    <link rel="stylesheet" href="../../build/css/intlTelInput.css">
+    <link rel="stylesheet" href="../../build/css/demo.css">
+
+    <link rel="stylesheet" href="../css/isValidNumber.css">
     <link rel="stylesheet" href="style/main_style.css">
     <link rel="stylesheet" href="style/animations.css">
+
+
 
 </head>
 
@@ -104,10 +114,22 @@
                                     <input type="text" id="calendar" class="form__input" autocomplete="off" placeholder=" ">
                                     <label for="calendar" class="form__label">Fecha de Nacimiento</label>
                                 </div>
-                                <div class="form_input_block form_input_block_phone">
-                                    <input type="number" id="telefonico" class="form__input" autocomplete="off" placeholder=" ">
-                                    <label for="telefonico" class="form__label form__label_tel">Numero Telefonico</label>
+                                <div class="phone_block">
+                                    <div class="form_input_block form_input_block_phone" id="result">
+                                        <div id="tel">
+                                            <input id="phone" type="tel" class="form__input" autocomplete="off" placeholder=" ">
+
+                                        </div>
+                                        <label for="tel" class="form__label form__label_tel">Numero Telefonico</label>
+                                        <div>
+                                            <span id="valid-msg" class="hide">Valid</span>
+                                            <span id="error-msg" class="hide"></span>
+                                        </div>
+
+
+                                    </div>
                                 </div>
+
                                 <div class="form_input_block_code">
                                     <div class="form_input_block">
                                         <input type="number" id="code" class="form__input" autocomplete="off" placeholder=" ">
@@ -206,7 +228,7 @@
         </div>
     </section>
     <section class="section4">
-        <div class="cloud_sec4" data-paroller-factor="0.3"  data-paroller-factor-md="0.5" data-paroller-factor-xs="1" data-paroller-direction="horizontal"></div>
+        <div class="cloud_sec4" data-paroller-factor="0.3" data-paroller-factor-md="0.5" data-paroller-factor-xs="1" data-paroller-direction="horizontal"></div>
         <div class="contant">
             <div class="content_box">
                 <img alt="" src="img/secrtion4_text.png" class="text_img text_img_mob">
@@ -311,8 +333,63 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="script/jquery.paroller.min.js"></script>
     <script src="script/main_script.js" type="text/javascript"></script>
+    <script src="../js/prism.js"></script>
+    <script src="../../build/js/intlTelInput.js"></script>
+    <script src="script/isValidNumber.js"></script>
 
 
-</body>
+    <!--
+    <script>
+        var input = document.querySelector("#phone"),
+            errorMsg = document.querySelector("#error-msg"),
+            validMsg = document.querySelector("#valid-msg");
 
-</html>
+        var errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"];
+
+       
+        var iti = window.intlTelInput(input, {
+            utilsScript: "../../build/js/utils.js?1585994360633"
+        });
+
+        var reset = function() {
+            input.classList.remove("error");
+            errorMsg.innerHTML = "";
+            errorMsg.classList.add("hide");
+            validMsg.classList.add("hide");
+        };
+
+    
+        input.addEventListener('blur', function() {
+            reset();
+            if (input.value.trim()) {
+                if (iti.isValidNumber()) {
+                    validMsg.classList.remove("hide");
+                } else {
+                    input.classList.add("error");
+                    var errorCode = iti.getValidationError();
+                    errorMsg.innerHTML = errorMap[errorCode];
+                    errorMsg.classList.remove("hide");
+                }
+            }
+        });
+
+      
+        input.addEventListener('change', reset);
+        input.addEventListener('keyup', reset);
+    </script>
+-->
+    <script>
+        $('.iti--allow-dropdown').click(function() {
+            $('.form__label_tel').css({
+                left: '15px',
+                color: '#6C4773',
+                top: '-8px',
+                'font-size': '12px',
+                'letter-spacing': '0.39px',
+                padding: '0 3px',
+
+            })
+        })
+    </script>
+
+</body></html>

@@ -10,7 +10,7 @@
     background-position: center;
     -webkit-animation: marquee 20s linear infinite;
     animation: marquee 20s linear infinite;
-    z-index: 1;
+    z-index: 0;
     opacity: 0.9;
 }
 
@@ -83,7 +83,7 @@
     height: 100%;
     object-fit: cover;
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
 
 }
 
@@ -289,9 +289,16 @@
     }
 }
 
+@media all and (max-width:1280px) {
+    .parallax__layer--base {
+        background-position: 50% 89%;
+
+    }
+}
+
 @media all and (max-width:900px) {
     .parallax__layer--base {
-        background-position: 50% 16%;
+        background-position: 50% 0%;
     }
 
     .p-item4::before {
