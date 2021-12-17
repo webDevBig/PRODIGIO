@@ -318,4 +318,8 @@
         bottom: -217px;
         width: 100%;
     }
+
+    .parallax__layer--base {
+        background-position: 50% 14%;
+    }
 }
