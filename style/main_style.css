@@ -432,8 +432,8 @@ select.form__input {
     width: 100%;
     height: 200px;
 }
-.iti.iti--allow-dropdown
-{
+
+.iti.iti--allow-dropdown {
     height: 100%;
 }
 
@@ -1276,14 +1276,15 @@ footer .title_mob,
         max-width: 100%;
         height: 200px;
     }
-    .form_content .phone_block
-    {
+
+    .form_content .phone_block {
         width: 100%;
     }
+
     .iti-mobile .iti__country-list {
-    max-width: 100%;
-    height: 200px;
-}
+        max-width: 100%;
+        height: 200px;
+    }
 
     header {
         padding: 58px 0 18px;
@@ -1417,13 +1418,16 @@ footer .title_mob,
         height: 56px;
         margin: 0 0 40px;
     }
+
     .form_input_block_code .form_input_block {
-    margin: 0 0 5px;
-}
-    .form_input_block_code p, .form_input_block_code a {
-    max-width: 100%;
-    padding: 0;
-}
+        margin: 0 0 5px;
+    }
+
+    .form_input_block_code p,
+    .form_input_block_code a {
+        max-width: 100%;
+        padding: 0;
+    }
 
     .response_section_top .row:last-of-type .form_input_block:nth-child(1) {
         display: none;
@@ -1823,9 +1827,16 @@ footer .title_mob,
     .section4 .cloud_paralax_mob {
         bottom: -6vw;
     }
-    .paralax__item
-    {
+
+    .paralax__item {
         display: none;
+    }
+
+    html,
+    body {
+        overflow: hidden;
+        position: relative;
+        height: 100%;
     }
 }
 
