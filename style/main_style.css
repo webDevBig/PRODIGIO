@@ -737,6 +737,32 @@ input::-webkit-inner-spin-button {
 
 .section6 .cup_img {
     max-width: 354px;
+    /*    width: 354px;*/
+}
+
+.section6 .number_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 55%;
+    left: 0;
+}
+
+.section6 .number_box .num {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Roboto, sans-serif;
+    color: #000000;
 }
 
 footer {
@@ -1167,6 +1193,16 @@ footer .title_mob,
         letter-spacing: 2.4px;
     }
 
+    .section6 .number_box .num {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .section6 .number_box {
+        top: 58%;
+    }
+
     footer .logo {
         max-width: 120px;
     }
@@ -1195,6 +1231,10 @@ footer .title_mob,
         font-size: 15px;
         letter-spacing: 1.8px;
         -webkit-text-stroke: 1px #4E4753;
+    }
+
+    .zodiak_section .contant {
+        background-size: cover;
     }
 
     .zodiak_section .zodiak img {
@@ -1598,6 +1638,10 @@ footer .title_mob,
         color: white;
     }
 
+    .section6 .number_box {
+        top: 50%;
+    }
+
     footer {
         flex-direction: column-reverse;
         padding: 25px 37px 60px;
@@ -1682,6 +1726,7 @@ footer .title_mob,
         font-family: Roboto, sans-serif;
         font-weight: 400;
     }
+    
 }
 
 @media all and (max-width:500px) {
