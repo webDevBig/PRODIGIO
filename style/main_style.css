@@ -430,7 +430,7 @@ select.form__input {
 
 .iti {
     width: 100%;
-    height: 56px;
+    height: 200px;
 }
 
 input::-webkit-outer-spin-button,
@@ -1269,8 +1269,17 @@ footer .title_mob,
 
 @media all and (max-width:900px) {
     .iti {
-        max-width: 351px;
+        max-width: 100%;
+        height: 200px;
     }
+    .form_content .phone_block
+    {
+        width: 100%;
+    }
+    .iti-mobile .iti__country-list {
+    max-width: 100%;
+    height: 200px;
+}
 
     header {
         padding: 58px 0 18px;
@@ -1404,6 +1413,13 @@ footer .title_mob,
         height: 56px;
         margin: 0 0 40px;
     }
+    .form_input_block_code .form_input_block {
+    margin: 0 0 5px;
+}
+    .form_input_block_code p, .form_input_block_code a {
+    max-width: 100%;
+    padding: 0;
+}
 
     .response_section_top .row:last-of-type .form_input_block:nth-child(1) {
         display: none;

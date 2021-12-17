@@ -75,7 +75,7 @@
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
     background-color: white;
     border: 1px solid #CCC;
-    white-space: nowrap;
+/*    white-space: nowrap;*/
     max-height: 200px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
@@ -114,7 +114,7 @@
 }
 
 .iti__country.iti__highlight {
-    background-color: rgba(0, 0, 0, 0.05);
+/*    background-color: rgba(0, 0, 0, 0.05);*/
 }
 
 .iti__flag-box,
@@ -172,11 +172,13 @@
 }
 
 .iti--container {
-    /*
-    position: absolute;
+    
+/*    position: absolute;*/
+/*
     top: -1000px;
     left: -1000px;
 */
+
     z-index: 1060;
     padding: 1px;
 }
@@ -185,22 +187,22 @@
     cursor: pointer;
 }
 
-/*
 .iti-mobile .iti--container {
+    position: absolute;
+    top: 56px;
+/*
     top: 30px;
     bottom: 30px;
     left: 30px;
     right: 30px;
     position: fixed;
-}
 */
+}
 
-/*
 .iti-mobile .iti__country-list {
     max-height: 100%;
     width: 100%;
 }
-*/
 
 .iti-mobile .iti__country {
     padding: 10px 10px;
