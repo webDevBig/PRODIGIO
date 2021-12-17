@@ -395,6 +395,7 @@ select.form__input {
     width: 294px;
     height: 56px;
     margin: 0 0 43px;
+    position: relative;
 }
 
 .iti-mobile .iti__country-list {
