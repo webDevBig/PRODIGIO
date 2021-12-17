@@ -1125,7 +1125,9 @@ footer .title_mob,
 }
 
 @media all and (max-width:1024px) {
-    .response_section_top .form_input_block {
+
+    .response_section_top .form_input_block,
+    .form_content .phone_block {
         width: 260px;
         height: 56px;
         margin: 0 0 33px;
@@ -1266,6 +1268,10 @@ footer .title_mob,
 }
 
 @media all and (max-width:900px) {
+    .iti {
+        max-width: 351px;
+    }
+
     header {
         padding: 58px 0 18px;
     }

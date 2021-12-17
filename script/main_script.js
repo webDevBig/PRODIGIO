@@ -29,7 +29,7 @@
       $('.form_input_block_code').css({
           display: "flex"
       })
-      $('.form_input_block_phone').css({
+      $('.phone_block').css({
           display: "none"
       })
       $(this).css({
