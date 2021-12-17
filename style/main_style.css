@@ -339,7 +339,7 @@ select.form__input {
 .form__label {
     position: absolute;
     left: 15px;
-    top: 17px;
+    top: 19px;
     padding: 0;
     color: rgba(0, 0, 0, 0.6);
     cursor: text;
