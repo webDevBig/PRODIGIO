@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="font/stylesheet.css">
     <link rel="stylesheet" href="style/lightpick.css">
     <link rel="stylesheet" href="style/main_style.css">
-    
+    <link rel="stylesheet" href="style/animations.css">
+
 </head>
 
 <body>
@@ -75,11 +76,11 @@
         <div class="contant">
             <div class="response_section_top">
                 <div class="img_section">
-                   <div class="img_block">
-                       <img alt="logo" src="img/NP_isologo_2020.png">
-                       <div class="photo"></div>
-                   </div>
-                    
+                    <div class="img_block">
+                        <img alt="logo" src="img/NP_isologo_2020.png">
+                        <div class="photo"></div>
+                    </div>
+
                     <p class="note">Si es tu primera vez aquí, aprovecha<br> este espacio para preguntarme<br> cualquier cosa que hoy te esté preocupando.</p>
                 </div>
                 <div class="text_section">
@@ -87,39 +88,104 @@
                     <p class="note">Si es tu primera vez aquí, aprovecha<br> este espacio para preguntarme<br> cualquier cosa que hoy te esté preocupando.</p>
                     <p class="mobile_text"> Responderé tu pregunta sobre el amor, salud, trabajo o tu destino. </p>
                     <form class="form">
-                        <div class="form_input_block">
-                            <input type="text" id="name" class="form__input" autocomplete="off" placeholder=" ">
-                            <label for="name" class="form__label">Nombre</label>
+                        <div class="form_content form_content_step1">
+                            <div class="row">
+                                <div class="form_input_block">
+                                    <input type="text" id="name" class="form__input" autocomplete="off" placeholder=" ">
+                                    <label for="name" class="form__label">Nombre</label>
+                                </div>
+                                <div class="form_input_block">
+                                    <input type="text" id="surname" class="form__input" autocomplete="off" placeholder=" ">
+                                    <label for="surname" class="form__label">Apellido</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5 form_input_block">
+                                    <input type="text" id="calendar" class="form__input" autocomplete="off" placeholder=" ">
+                                    <label for="calendar" class="form__label">Fecha de Nacimiento</label>
+                                </div>
+                                <div class="form_input_block form_input_block_phone">
+                                    <input type="number" id="telefonico" class="form__input" autocomplete="off" placeholder=" ">
+                                    <label for="telefonico" class="form__label form__label_tel">Numero Telefonico</label>
+                                </div>
+                                <div class="form_input_block_code">
+                                    <div class="form_input_block">
+                                        <input type="number" id="code" class="form__input" autocomplete="off" placeholder=" ">
+                                        <label for="code" class="form__label">Digite el código de verificación</label>
+                                    </div>
+                                    <p>Texto de verificación enviado a: +1234567890</p>
+                                    <a href="">Editar numero telefonico.</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form_input_block">
+                                    <p>Regístrate gratis en este formulario para que recibas de mi parte una respuesta llena de luz y claridad.</p>
+                                </div>
+                                <div class="form_input_block">
+                                    <input type="button" class="continuar" id="confirm" value="CONTINUAR">
+                                    <input type="button" class="continuar" id="verification" value="VERIFICAR">
+                                </div>
+                                <div class="form_input_block form_input_block_mob">
+                                    <p>Regístrate gratis en este formulario para que recibas de mi parte una respuesta llena de luz y claridad.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form_input_block">
-                            <input type="text" id="surname" class="form__input" autocomplete="off" placeholder=" ">
-                            <label for="surname" class="form__label">Apellido</label>
+                        <div class="form_content form_content_step2">
+                            <div class="row">
+                                <div class="form_input_block">
+                                    <textarea id="text" class="form__input" placeholder=" "></textarea>
+                                    <label for="text" class="form__label">Pregúntale al Niño Prodigio</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5 form_input_block">
+                                    <input type="email" id="email" class="form__input" autocomplete="off" placeholder=" ">
+                                    <label for="email" class="form__label">Correo electrónico</label>
+                                </div>
+                                <div class="form_input_block">
+                                    <select id="sex" class="form__input" autocomplete="off" placeholder=" ">
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                    <label for="sex" class="form__label">Sexo</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form_input_block">
+                                   <select id="sex2" class="form__input" autocomplete="off" placeholder=" ">
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                    <label for="sex2" class="form__label">Sexo</label>
+                                </div>
+                                <div class="form_input_block">
+                                    <input type="button" class="continuar" id="confirm_finish" value="ENVIAR PREGUNTA">
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="col-md-5 form_input_block">
-                            <input type="text" id="demo-1" class="form-control form-control-sm form__input" placeholder="Fecha de Nacimiento" autocomplete="off" />
-                        </div>
-                        <div class="form_input_block">
-                            <input type="text" id="telefonico" class="form__input" autocomplete="off" placeholder=" ">
-                            <label for="telefonico" class="form__label form__label_tel">Numero Telefonico</label>
-                        </div>
-                        <div class="form_input_block">
-                            <p>Regístrate gratis en este formulario para que recibas de mi parte una respuesta llena de luz y claridad.</p>
-                        </div>
-                        <div class="form_input_block">
-                            <button class="continuar">CONTINUAR</button>
-                        </div>
-                        <div class="form_input_block form_input_block_mob">
-                            <p>Regístrate gratis en este formulario para que recibas de mi parte una respuesta llena de luz y claridad.</p>
+                        
+                        <div class="form_content form_content_step3">
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <p class="text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <h3 class="h3">Bendiciones!</h3>
                         </div>
                     </form>
                 </div>
             </div>
             <p class="title">Responderé tu pregunta sobre el amor, salud, trabajo o tu destino.<br> Regístrate gratis en este formulario para que recibas de mi parte una<br> respuesta llena de luz y claridad.</p>
         </div>
+        <section class="paralax">
+            <div class="paralax__item p-item4"></div>
+            <div class="parallax__layer--base" id="smoke"></div>
+
+        </section>
     </section>
     <section class="section3">
-        <img alt="cloud" src="img/cloud_sec3.png" class="cloud_paralax">
-        <img alt="cloud" src="img/sec3_cloud_mob.png" class="cloud_paralax cloud_mob">
+        <div class="cloud_sec3" data-paroller-factor="0.05" data-paroller-type="foreground" data-paroller-direction="horizontal">
+            <img alt="cloud" src="img/cloud_sec3.png" class="cloud_paralax">
+            <img alt="cloud" src="img/sec3_cloud_mob.png" class="cloud_paralax cloud_mob">
+        </div>
         <h1 class="h1">ADQUIERE TU RITUAL DE FIN DE AÑO Y ENTÈRATE<br>
             DE LAS PREDICCIONES PARA EL 2022</h1>
         <div class="blocks">
@@ -140,34 +206,34 @@
         </div>
     </section>
     <section class="section4">
-        <img alt="cloud" src="img/cloud_sec4.png" class="cloud_paralax">
+        <div class="cloud_sec4" data-paroller-factor="0.3" data-paroller-direction="horizontal"></div>
         <div class="contant">
             <div class="content_box">
-              <img alt="" src="img/secrtion4_text.png" class="text_img text_img_mob">
-               <div class="photo"></div>
+                <img alt="" src="img/secrtion4_text.png" class="text_img text_img_mob">
+                <div class="photo"></div>
                 <p class="note">MI EQUIPO DE PSÌQUICOS<br>
                     EXPERTOS PUEDE BRINDARTE<br>
                     LA AYUDA ESPIRITUAL<br>
                     QUE NECESITAS </p>
                 <img alt="" src="img/secrtion4_text.png" class="text_img">
-                
+
                 <div class="skype_box">
                     <img alt="skype" src="img/skype.png" class="skype_img">
                     <p class="text">Bùscame en Skype<br>
                         NINOPRODIGIOSKYPE </p>
-                </div> 
+                </div>
             </div>
         </div>
     </section>
     <section class="section5">
-       <div class="contant">
-        <h1 class="h1">CONOCE MI NUEVA<br> LÌNEA DE PRODUCTOS</h1>
-        <img alt="logo" src="img/logo-blanco.png" class="logo">
-        <div class="number_box">
-            <img alt="" src="img/section5_text.png" class="text_img">
-            <p class="text_img">Llama ya!</p>
-            <p class="number">1-888-562-2515</p>
-        </div>
+        <div class="contant">
+            <h1 class="h1">CONOCE MI NUEVA<br> LÌNEA DE PRODUCTOS</h1>
+            <img alt="logo" src="img/logo-blanco.png" class="logo">
+            <div class="number_box">
+                <img alt="" src="img/section5_text.png" class="text_img">
+                <p class="text_img">Llama ya!</p>
+                <p class="number">1-888-562-2515</p>
+            </div>
         </div>
     </section>
     <section class="section6">
@@ -186,6 +252,13 @@
                 DE LA SUERTE</p>
             <img alt="" src="img/cup.png" class="cup_img">
 
+        </div>
+        <div class="stars">
+            <div id="stars-group-1"></div>
+            <div id="stars-group-2"></div>
+            <div id="stars-group-3"></div>
+            <div id="stars-group-4"></div>
+            <div id="stars-group-5"></div>
         </div>
     </section>
     <footer>
@@ -212,8 +285,8 @@
             <p class="title title_mob">Suscrìbase para recibir ofertas, eventos y màs</p>
             <form class="form">
                 <div class="form_input_block">
-                    <input type="text" id="email" class="form__input" autocomplete="off" placeholder=" ">
-                    <label for="email" class="form__label">Correo Electrónico</label>
+                    <input type="text" id="footer_email" class="form__input" autocomplete="off" placeholder=" ">
+                    <label for="footer_email" class="form__label">Correo Electrónico</label>
                 </div>
 
                 <button class="continuar">SUSCRIBETE</button>
@@ -227,15 +300,74 @@
     <script type="text/javascript" src="https://unpkg.com/lightpick@latest/lightpick.js"></script>
     <script type="text/javascript">
         new Lightpick({
-            field: document.getElementById('demo-1'),
+            field: document.getElementById('calendar'),
             format: 'MMMM DD, YYYY',
             firstDay: 7,
-            onSelect: function(date) {
-                //        document.getElementById('result-1').innerHTML = date.format('Do MMMM YYYY');
-            }
         });
 
     </script>
+    <script type="text/javascript">
+        window.onload = function() {
+
+            window.addEventListener('scroll', function(e) {
+
+                let s = this.scrollY;
+                let w = this.outerWidth;
+                let h = document.getElementsByClassName('paralax')[0].clientWidth;
+                let h_b = 500;
+
+
+                let p_b = s / h_b;
+                let z_1 = 1 + (w / 10000 * p_b);
+                document.getElementsByClassName('parallax__layer--base')[0].style = `transform: scale(${z_1});`;
+
+                document.getElementsByClassName('cloud_sec4')[0].style = `transform: scale(${z_1});`;
+            })
+
+        }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="jquery.paroller.min.js"></script>
+    <script>
+        $('.cloud_sec3').paroller();
+
+
+        $("#confirm").click(function() {
+            $('.form_input_block_code').css({
+                display: "flex"
+            })
+            $('.form_input_block_phone').css({
+                display: "none"
+            })
+            $(this).css({
+                display: 'none'
+            })
+            $('#verification').css({
+                display: "block"
+            })
+        })
+
+        $("#verification").click(function() {
+            $('.form_content_step2').css({
+                display: "flex"
+            })
+            $('.form_content_step1').css({
+                display: "none"
+            })
+        })
+        $("#confirm_finish").click(function(){
+            $('.form_content_step3').css({
+                display: "flex"
+            })
+            $('.form_content_step2').css({
+                display: "none"
+            })
+        })
+
+    </script>
+
 
 </body>
 
