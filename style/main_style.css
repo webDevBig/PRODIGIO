@@ -365,23 +365,6 @@ select.form__input {
     left: 15px;
 }
 
-#phone:focus > .form__label {
-    color: #6C4773;
-}
-
-#phone:focus ~ .form__label_tel {
-    left: 15px;
-}
-
-#phone:focus ~ .form__label,
-#phone:not(:placeholder-shown)#phone:not(:focus) ~ .form__label {
-    top: -8px;
-    font-size: 12px;
-    letter-spacing: 0.39px;
-    padding: 0 3px;
-    left: 15px;
-}
-
 .form__input:focus ~ .form__label {
     color: #6C4773;
 }
@@ -408,6 +391,16 @@ select.form__input {
     appearance: none;
 }
 
+.form_content .phone_block {
+    width: 294px;
+    height: 56px;
+    margin: 0 0 43px;
+}
+
+.iti-mobile .iti__country-list {
+    max-width: 294px;
+    height: 200px;
+}
 
 #tel {
     width: 100%;
