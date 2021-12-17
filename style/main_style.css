@@ -432,6 +432,10 @@ select.form__input {
     width: 100%;
     height: 200px;
 }
+.iti.iti--allow-dropdown
+{
+    height: 100%;
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -1818,6 +1822,10 @@ footer .title_mob,
 @media all and (max-width:425px) {
     .section4 .cloud_paralax_mob {
         bottom: -6vw;
+    }
+    .paralax__item
+    {
+        display: none;
     }
 }
 
